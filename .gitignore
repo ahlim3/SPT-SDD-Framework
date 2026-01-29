@@ -5,15 +5,6 @@ __pycache__/
 *.pyd
 .env
 
-# Data (do NOT publish)
-*_Dummy/
-*_Simulation/
-Average_Dose/
-Ex_PHASE_SPACE/
-*.sdd
-*.csv
-*.txt
-
 # OS
 .DS_Store
 
