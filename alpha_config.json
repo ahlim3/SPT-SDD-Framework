@@ -1,0 +1,16 @@
+{
+  "paths": {
+    "dose_file_folder": "./Alpha_Dummy/Dose/",
+    "DSB_file_folder": "./Alpha_Dummy/SDD/",
+    "output_folder": "./Alpha_Simulation/",
+    "mean_dose_csv_path": "./Average_Dose/Alpha.csv",
+    "target_spectrum": "./Ex_PHASE_SPACE/Alpha_Limited.phsp"
+  },
+  "simulation": {
+    "total_simulations": 10,
+    "simulation_name": "Alpha",
+    "incident_pdg": "1000020040",
+    "assigned_dose": 0.75,
+    "simulation_type": "high_let"
+  }
+}

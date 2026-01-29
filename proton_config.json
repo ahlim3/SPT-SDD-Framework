@@ -1,0 +1,16 @@
+{
+  "paths": {
+    "dose_file_folder": "./Proton_Dummy/Dose/",
+    "DSB_file_folder": "./Proton_Dummy/SDD/",
+    "output_folder": "./Proton_Simulation/",
+    "mean_dose_csv_path": "None",
+    "target_spectrum": "./Ex_PHASE_SPACE/Proton_Limited.phsp"
+  },
+  "simulation": {
+    "total_simulations": 10,
+    "simulation_name": "Proton",
+    "incident_pdg": "2212",
+    "assigned_dose": 1.0,
+    "simulation_type": "low_let"
+  }
+}

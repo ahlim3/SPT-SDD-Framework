@@ -1,0 +1,17 @@
+{
+  "paths": {
+    "dose_file_folder": "./Electron_Dummy/Dose/",
+    "DSB_file_folder": "./Electron_Dummy/SDD/",
+    "output_folder": "./Electron_Sim/",
+    "mean_dose_csv_path": "None",
+    "target_spectrum": "./Ex_PHASE_SPACE/Electron_Limited.phsp"
+  },
+  "simulation": {
+    "total_simulations": 10,
+    "simulation_name": "Electron",
+    "incident_pdg": "11",
+    "assigned_dose": 1.0,
+    "simulation_type": "low_let",
+    "dose_rate_Gy_per_min": 0.55
+  }
+}
