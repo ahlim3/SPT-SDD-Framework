@@ -15,6 +15,7 @@ Large pre-calculated SDD libraries, phase-space files, and HPC-specific scripts 
 - Modular Python framework
 - Example configuration files
 - End-to-end assembly pipeline
+- Dummy SDD, and Dose data, and its simulation and Phase-space files for 3 cases listed on literature.
 
 ### Excluded (not public)
 - Full pre-calculated SDD libraries  
@@ -22,7 +23,7 @@ Large pre-calculated SDD libraries, phase-space files, and HPC-specific scripts 
 - Phase-space files  
 - HPC job submission scripts  
 
-These excluded components are large (>10–100 GB) and experiment-specific but **are not required to understand or reproduce the methodology**.
+These excluded components are large (>50 GB) and experiment-specific but **are not required to understand or reproduce the methodology**.
 
 ---
 
@@ -34,6 +35,9 @@ project_root/
 │  ├─ core_utils.py        # Energy grid, PDF/CDF, config utilities
 │  ├─ dose_engine.py       # High-/low-LET dose & particle sampling logic
 │  └─ sdd_io.py            # SDD writer, PID reindexing, timestamp handling
+├─ {Particle}_Dummy/
+|  ├─ Dose/                # Dummy are extracted from Full pre-calculated librarties
+│  └─ SDD/
 │
 ├─ main_assembler.py       # Main pipeline entry point
 │
