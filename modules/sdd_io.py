@@ -17,18 +17,18 @@ class SDDWriter:
                     if not s.endswith(";"): s += ";"
                     head, rest = s.split(";", 1)
                     
-                    if next_pid == 0 and first_line_of_track: type_val = "2"
+                    if processed_body == [] and first_line_of_track: type_val = "2"
                     elif first_line_of_track: type_val = "1"
                     else: type_val = head.split(",")[0]
                     
-                    # 시간 정보가 있을 경우 ns 정수 추가
+                    # nanosecond transition of irradiation
                     time_suffix = f"{t_int};" if track_times else ""
                     processed_body.append(f"{type_val},{next_pid};{rest}{time_suffix}\n")
                     first_line_of_track = False
                 except: continue
             next_pid += 1
 
-        # 데이터 엔트리 마지막 필드를 1로 설정하여 시간 포함 명시
+        # Data Enetries for Time-Stamp
         entries = "1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0"
         if track_times: entries = entries[:-1] + "1"
         
